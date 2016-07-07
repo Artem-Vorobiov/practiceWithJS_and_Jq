@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Form and Input</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/common.js"></script>
 </head>
 <body>
    <form name="login">
        <div><h1>List with  input, textarea, select (option)</h1></div>
        <div class="first">
            <p>Just input - type = "text":</p>
-           <input type="text" autofocus>
+           <input type="text" name="vvod">
            <hr>
        </div>
        <div class="second">
@@ -29,8 +30,8 @@
            <hr>
        </div>
        <div class="fourth">
-          <p>Just input - type = "button":</p>
-           <input type="button" alt="Just BUTTON" name="Just" value="Just">
+          <p id="change">Just input - type = "button".<br>Here I try to use JS. Look what will happend!</p>
+           <input id="test" type="button" alt="Just BUTTON" name="Just" value="Just" onclick="changeText()">
            <hr>
        </div>
        <div class="fifth">
@@ -50,7 +51,7 @@
        </div>
        <div class="eighth">
           <p>Just input - type = "IMAGE-BUTTON":</p>
-           <input type="image" src="img/08826.png">
+           <input type="image" src="img/08826.png" onclick="winOpen()">
            <hr>
        </div>
        <div>
@@ -96,9 +97,53 @@
            </select>
            <hr>
        </div>
+       <div>
+           <input type="checkbox" id="cbgroup1_master" onchange="toggleCheckboxes(this,'cbgroup1')" autofocus>Toggle all
+           <br><br>
+           <input type="checkbox" id="cb1_1" class="cbgroup1" name="cbg1[]" value="1">Item 1 <br>
+           <input type="checkbox" id="cb1_2" class="cbgroup1" name="cbg1[]" value="2">Item 2 <br>
+           <input type="checkbox" id="cb1_3" class="cbgroup1" name="cbg1[]" value="3">Item 3 <br>
+           <input type="checkbox" id="cb1_4" class="cbgroup1" name="cbg1[]" value="4">Item 4 <br>
+       </div>
        
    </form>
     
 </body>
-<script src="js/common.js"></script>
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

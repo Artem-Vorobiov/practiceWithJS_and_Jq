@@ -23,3 +23,18 @@ form {
     text-align: center;
 } 
 
+.fourth p {
+    color: dodgerblue;
+    text-transform: uppercase;
+}
+#test {
+    font-size: 15px;
+    transition: .9s ease;
+    cursor: pointer;
+}
+
+#test:hover {
+    font-weight: bold;
+    font-size: 25px;
+    background-color: azure;
+}
